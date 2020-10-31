@@ -12,21 +12,37 @@ namespace WordProcessor
 {
     public class Utility
     {
+        public Utility(byte depth)
+        {
+            maxDepth = depth;
+        }
         public static string CleanHtml(string input)
         {
             var doc = new HtmlDocument();
             doc.LoadHtml(input ?? "");
             return Regex.Replace(doc.DocumentNode.InnerText.Trim(), @"\s+", " ");
         }
-        static int maxDepth = 4;
+        byte maxDepth = 3;
         //public static string CleanHtml(string s) => s.Replace( Regex.Replace(s, "<[^>]*>", string.Empty, RegexOptions.Multiline);
-        public static string GetTextFromUrl(Uri link, List<string> visited, int level = 0)
+        public string GetTextFromUrl(Uri link, List<string> visited, byte level = 0)
         {
-            if (visited.Contains(link.ToString()))
+            var linkString = link.ToString().ToLower();
+            if (visited.Contains(linkString))
                 return string.Empty;
+            string html = string.Empty;
             using var wc = new WebClient();
-            var html = wc.DownloadString(link);
-            visited.Add(link.ToString().ToLower());
+            try
+            {
+                html = wc.DownloadString(link);
+            }
+            catch (WebException)
+            {
+                return string.Empty;
+            }
+            finally
+            {
+                visited.Add(linkString);
+            }
             if (level == maxDepth)
                 return CleanHtml(html);
             level++;
@@ -45,16 +61,29 @@ namespace WordProcessor
             return htmlBuilder.ToString();
         }
 
-        public static async Task GetTextFromUrlAsync(Uri link, ConcurrentDictionary<string, string> visited, int level = 0)
+        public async Task GetTextFromUrlAsync(Uri link, ConcurrentDictionary<string, string> visited, byte level = 0)
         {
             var linkString = link.ToString().ToLower();
             if (visited.ContainsKey(linkString))
                 return;
             using var wc = new WebClient();
-            var html = await wc.DownloadStringTaskAsync(link);
-            var cleaned = CleanHtml(html);
-            if (!visited.ContainsKey(linkString))
-                visited.TryAdd(linkString, cleaned);
+            string html = string.Empty;
+            var cleaned = string.Empty;
+            try
+            {
+                html = await wc.DownloadStringTaskAsync(link);
+            }
+            catch (WebException)
+            {
+                return;
+            }
+            finally
+            {
+                if (!string.IsNullOrWhiteSpace(html))
+                    cleaned = CleanHtml(html);
+                if (!visited.ContainsKey(linkString))
+                    visited.TryAdd(linkString, cleaned);
+            }
             if (level == maxDepth)
                 return;
             level++;
@@ -74,9 +103,9 @@ namespace WordProcessor
         static Regex hyperlinkPattern = new Regex(@"(?<=\<a.*\bhref\=\"")[^\""]*", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture);
         private static Queue<Uri> GetHyperLinks(string html, string host, IEnumerable<string> visited) => new Queue<Uri>(hyperlinkPattern.Matches(html).Select(p => p.Value.ToLower()).Where(p => p.Contains(host) && !visited.Contains(p)).Select(p => new Uri(p)));
 
-        public static string GetTextFromUrl(Uri link) => GetTextFromUrl(link, new List<string>());
+        public string GetTextFromUrl(Uri link) => GetTextFromUrl(link, new List<string>());
 
-        public static async Task<string> GetTextFromUrlAsync(Uri link)
+        public async Task<string> GetTextFromUrlAsync(Uri link)
         {
             var visited = new ConcurrentDictionary<string, string>();
             await GetTextFromUrlAsync(link, visited);

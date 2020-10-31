@@ -23,9 +23,9 @@ namespace WordProcessor
             return q;
         }
 
-        public IEnumerable<PhraseFrequency> CalculateWordFrequence(Uri uri, int? top = null) => CalculateWordFrequence(Utility.GetTextFromUrl(uri), top);
+        public IEnumerable<PhraseFrequency> CalculateWordFrequence(Uri uri, int? top = null) => CalculateWordFrequence(new Utility(4).GetTextFromUrl(uri), top);
 
-        public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(Uri uri, int top) => CalculateWordPairFrequency(Utility.GetTextFromUrlAsync(uri).Result, top);
+        public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(Uri uri, int top) => CalculateWordPairFrequency(new Utility(4).GetTextFromUrlAsync(uri).Result, top);
 
         public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(string content, int top)
         {

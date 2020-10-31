@@ -38,6 +38,8 @@ namespace WordFrequencyCalculator
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +61,7 @@ namespace WordFrequencyCalculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(515, 12);
+            this.button1.Location = new System.Drawing.Point(611, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 2;
@@ -78,7 +80,7 @@ namespace WordFrequencyCalculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(662, 13);
+            this.button2.Location = new System.Drawing.Point(743, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 23);
             this.button2.TabIndex = 4;
@@ -118,11 +120,31 @@ namespace WordFrequencyCalculator
             this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 8;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(490, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(39, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Depth";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(536, 12);
+            this.textBox2.MaxLength = 1;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(21, 23);
+            this.textBox2.TabIndex = 10;
+            this.textBox2.Text = "4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.progressBar1);
@@ -149,6 +171,8 @@ namespace WordFrequencyCalculator
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

@@ -17,18 +17,18 @@ namespace WordProcessor.Tests
         }
 
         [Test()]
-        [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9")]
-        public void GetHtmlFromUrlAsyncTest(Uri uri)
+        [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9", 4)]
+        public void GetHtmlFromUrlAsyncTest(Uri uri, byte depth)
         {
-            var html = Utility.GetTextFromUrlAsync(uri).Result;
+            var html = new Utility(depth).GetTextFromUrlAsync(uri).Result;
             Assert.Greater(html.Length, 0);
         }
 
         [Test()]
-        [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9")]
-        public void GetTextFromUrlTest(Uri uri)
+        [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9", 4)]
+        public void GetTextFromUrlTest(Uri uri, byte depth)
         {
-            var txt = Utility.GetTextFromUrl(uri);
+            var txt = new Utility(depth).GetTextFromUrl(uri);
             Assert.Greater(txt.Length, 0);
         }
     }
