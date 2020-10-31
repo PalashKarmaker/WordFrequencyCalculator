@@ -69,7 +69,7 @@ namespace WordFrequencyCalculator
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.MistyRose;
+            this.richTextBox1.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.richTextBox1.Location = new System.Drawing.Point(12, 73);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(475, 365);
@@ -100,6 +100,8 @@ namespace WordFrequencyCalculator
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.listBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Location = new System.Drawing.Point(515, 73);
