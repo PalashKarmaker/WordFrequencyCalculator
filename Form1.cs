@@ -60,7 +60,7 @@ namespace WordFrequencyCalculator
             //var content = Utility.GetTextFromUrl(link);
             backgroundWorker1.ReportProgress(50, content);
             IEnumerable<PhraseFrequency> res;
-            if(e.Argument.ToString() == "1")
+            if (e.Argument.ToString() == "1")
                 res = fc.CalculateWordFrequence(content, 10);
             else
                 res = fc.CalculateWordPairFrequency(content, 10);
