@@ -56,8 +56,7 @@ namespace WordFrequencyCalculator
         {
             var startTime = DateTime.Now;
             var fc = new FrequencyCalculator();
-            if (!byte.TryParse(textBox2.Text, out byte depth))
-                depth = 4;
+            var depth = Convert.ToByte(numericUpDown1.Value);
             var content = new Utility(depth).GetTextFromUrlAsync(link).Result;
             //var content = Utility.GetTextFromUrl(link);
             backgroundWorker1.ReportProgress(50, content);
