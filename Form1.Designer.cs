@@ -37,6 +37,7 @@ namespace WordFrequencyCalculator
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,9 +93,9 @@ namespace WordFrequencyCalculator
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(42, 44);
+            this.progressBar1.Location = new System.Drawing.Point(13, 44);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(876, 23);
+            this.progressBar1.Size = new System.Drawing.Size(474, 23);
             this.progressBar1.TabIndex = 6;
             // 
             // listBox1
@@ -106,11 +107,21 @@ namespace WordFrequencyCalculator
             this.listBox1.Size = new System.Drawing.Size(403, 364);
             this.listBox1.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label2.Location = new System.Drawing.Point(515, 52);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(930, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button2);
@@ -135,6 +146,7 @@ namespace WordFrequencyCalculator
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

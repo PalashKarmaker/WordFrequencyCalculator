@@ -44,16 +44,20 @@ namespace WordFrequencyCalculator
         private void BackgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             progressBar1.Value = e.ProgressPercentage;
-            if(e.ProgressPercentage == 50)
+            if (e.ProgressPercentage == 50)
                 richTextBox1.Text = e.UserState.ToString();
-            if(e.ProgressPercentage == 75)
+            else if (e.ProgressPercentage == 75)
                 BindList(e.UserState as IEnumerable<PhraseFrequency>);
+            else if (e.ProgressPercentage == 100)
+                label2.Text = $"Time taken: {e.UserState} seconds";
         }
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
+            var startTime = DateTime.Now;
             var fc = new FrequencyCalculator();
-            var content = Utility.GetTextFromUrl(new Uri(textBox1.Text));
+            var content = Utility.GetTextFromUrlAsync(link).Result;
+            //var content = Utility.GetTextFromUrl(link);
             backgroundWorker1.ReportProgress(50, content);
             IEnumerable<PhraseFrequency> res;
             if(e.Argument.ToString() == "1")
@@ -61,7 +65,7 @@ namespace WordFrequencyCalculator
             else
                 res = fc.CalculateWordPairFrequency(content, 10);
             backgroundWorker1.ReportProgress(75, res);
-            backgroundWorker1.ReportProgress(100);
+            backgroundWorker1.ReportProgress(100, DateTime.Now.Subtract(startTime).TotalSeconds);
         }
 
         private void BindList(IEnumerable<PhraseFrequency> res)
@@ -79,6 +83,7 @@ namespace WordFrequencyCalculator
             if (working)
             {
                 progressBar1.Value = 0;
+                label2.Text = string.Empty;
                 listBox1.Items.Clear();
                 richTextBox1.Text = string.Empty;
             }
