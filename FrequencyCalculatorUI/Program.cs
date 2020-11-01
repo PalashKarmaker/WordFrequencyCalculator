@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace WordFrequencyCalculator
+namespace FrequencyCalculatorUI
 {
     static class Program
     {

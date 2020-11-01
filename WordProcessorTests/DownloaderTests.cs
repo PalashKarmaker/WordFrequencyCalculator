@@ -4,7 +4,7 @@ using System;
 namespace WordProcessor.Tests
 {
     [TestFixture()]
-    public class UtilityTests
+    public class DownloaderTests
     {
         [Test()]
         [TestCase(@"<span class=""nav-bar-button-chevron"" aria-hidden=""true"">Before test string
@@ -12,7 +12,7 @@ namespace WordProcessor.Tests
 			</span>")]
         public void CleanHtmlTest(string html)
         {
-            var txt = Utility.CleanHtml(html);
+            var txt = Downloader.CleanHtml(html);
             Assert.Less(txt.IndexOf("<"), 0);
         }
 
@@ -20,7 +20,7 @@ namespace WordProcessor.Tests
         [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9", 4)]
         public void GetHtmlFromUrlAsyncTest(Uri uri, byte depth)
         {
-            var html = new Utility(depth).GetTextFromUrlAsync(uri).Result;
+            var html = new Downloader(depth).GetTextFromUrlAsync(uri).Result;
             Assert.Greater(html.Length, 0);
         }
 
@@ -28,7 +28,7 @@ namespace WordProcessor.Tests
         [TestCase("https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9", 4)]
         public void GetTextFromUrlTest(Uri uri, byte depth)
         {
-            var txt = new Utility(depth).GetTextFromUrl(uri);
+            var txt = new Downloader(depth).GetTextFromUrl(uri);
             Assert.Greater(txt.Length, 0);
         }
     }

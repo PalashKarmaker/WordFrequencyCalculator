@@ -12,7 +12,7 @@ namespace WordProcessor.Tests
         public void CalculateWordFrequenceTest(Uri uri, int top)
         {
             var fc = new FrequencyCalculator();
-            var f = fc.CalculateWordFrequence(uri, top).ToList();
+            var f = fc.CalculateWordFrequency(uri, top).ToList();
             Assert.IsNotNull(f);
         }
 

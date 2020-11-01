@@ -5,15 +5,32 @@ using System.Text.RegularExpressions;
 
 namespace WordProcessor
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="PhraseFrequency"/>
+    /// <seealso cref="Downloader"/>
     public class FrequencyCalculator
     {
-        public IEnumerable<PhraseFrequency> CalculateWordFrequence(string content, int? top = null)
+        /// <summary>
+        /// Calculate frequency of occurance of a particular phrase in a given text content
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="top">Take only first set of items with freequency in descending order </param>
+        /// <returns></returns>
+        public IEnumerable<PhraseFrequency> CalculateWordFrequency(string content, int? top = null)
         {
             content = content.ToLower();
             var wordPattern = new Regex(@"\w+", RegexOptions.IgnoreCase);
             return CalculateFrequency(content, wordPattern, top);
         }
-
+        /// <summary>
+        /// Calculate frequency of occurance of a given pattern in a given text content
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="wordPattern"></param>
+        /// <param name="top">Take only first set of items with freequency in descending order</param>
+        /// <returns></returns>
         private static IEnumerable<PhraseFrequency> CalculateFrequency(string content, Regex wordPattern, int? top = null)
         {
             var words = wordPattern.Matches(content).Select(p => p.Value);
@@ -22,15 +39,30 @@ namespace WordProcessor
                 return q.Take(top.Value);
             return q;
         }
-
-        public IEnumerable<PhraseFrequency> CalculateWordFrequence(Uri uri, int? top = null) => CalculateWordFrequence(new Utility(4).GetTextFromUrl(uri), top);
-
-        public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(Uri uri, int top) => CalculateWordPairFrequency(new Utility(4).GetTextFromUrlAsync(uri).Result, top);
-
+        /// <summary>
+        /// Calculate frequency of occurance of a particular phrase for given url
+        /// </summary>
+        /// <param name="uri"></param>
+        /// <param name="top">Take only first set of items with freequency in descending order</param>
+        /// <returns></returns>
+        public IEnumerable<PhraseFrequency> CalculateWordFrequency(Uri uri, int? top = null) => CalculateWordFrequency(new Downloader(4).GetTextFromUrl(uri), top);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="uri"></param>
+        /// <param name="top"></param>
+        /// <returns></returns>
+        public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(Uri uri, int top) => CalculateWordPairFrequency(new Downloader(4).GetTextFromUrlAsync(uri).Result, top);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="top"></param>
+        /// <returns></returns>
         public IEnumerable<PhraseFrequency> CalculateWordPairFrequency(string content, int top)
         {
             content = content.ToLower();
-            var wordFrequency = new Queue<PhraseFrequency>(CalculateWordFrequence(content));
+            var wordFrequency = new Queue<PhraseFrequency>(CalculateWordFrequency(content));
             var consecutiveFrequency = new List<PhraseFrequency>();
             while (wordFrequency.Any())
             {

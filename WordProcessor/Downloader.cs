@@ -10,20 +10,44 @@ using System.Threading.Tasks;
 
 namespace WordProcessor
 {
-    public class Utility
+    /// <summary>
+    /// Class to download content from given url traversing upto a certain level of depth of the hyperlinks of same domain
+    /// </summary>
+    public class Downloader
     {
-        public Utility(byte depth)
+        /// <summary>
+        /// Constructor for Downloaded
+        /// </summary>
+        /// <param name="depth"></param>
+        public Downloader(byte depth)
         {
             maxDepth = depth;
         }
+        /// <summary>
+        /// Outputs string stripping off html tags and extra spaces
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns>string</returns>
         public static string CleanHtml(string input)
         {
             var doc = new HtmlDocument();
             doc.LoadHtml(input ?? "");
             return Regex.Replace(doc.DocumentNode.InnerText.Trim(), @"\s+", " ");
         }
-        byte maxDepth = 3;
         //public static string CleanHtml(string s) => s.Replace( Regex.Replace(s, "<[^>]*>", string.Empty, RegexOptions.Multiline);
+
+        readonly byte maxDepth = 3;
+
+        /// <summary>
+        /// Synshronous call to fetch html cleaned content from given url.
+        /// It traverses upto a certain level of depth of the hyperlinks of same domain
+        /// </summary>
+        /// <param name="link"></param>
+        /// <param name="visited">Keep track already visited links</param>
+        /// <param name="level">Level of depth of the hyperlinks of same domain to traverse</param>
+        /// <returns></returns>
+        /// <seealso cref="GetTextFromUrlAsync(Uri, ConcurrentDictionary{string, string}, byte)"/>
+        /// <seealso cref="GetTextFromUrl(Uri)"/>
         public string GetTextFromUrl(Uri link, List<string> visited, byte level = 0)
         {
             var linkString = link.ToString().ToLower();
@@ -61,6 +85,15 @@ namespace WordProcessor
             return htmlBuilder.ToString();
         }
 
+        /// <summary>
+        /// Asynshronous multithreaded call to fetch html cleaned content from given url.
+        /// </summary>
+        /// <param name="link"></param>
+        /// <param name="visited">Keep track already visited links and corresponding contents</param>
+        /// <param name="level">Level of depth of the hyperlinks of same domain to traverse</param>
+        /// <returns></returns>
+        /// <seealso cref="GetTextFromUrl(Uri, List{string}, byte)"/>
+        /// <seealso cref="GetTextFromUrlAsync(Uri)"/>
         public async Task GetTextFromUrlAsync(Uri link, ConcurrentDictionary<string, string> visited, byte level = 0)
         {
             var linkString = link.ToString().ToLower();
@@ -100,11 +133,37 @@ namespace WordProcessor
                 Task.WaitAll(downloaadTasks.ToArray());
             return;
         }
-        static Regex hyperlinkPattern = new Regex(@"(?<=\<a.*\bhref\=\"")[^\""]*", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture);
+
+        /// <summary>
+        /// Regex to find hyperlink inside html content
+        /// </summary>
+        static readonly Regex hyperlinkPattern = new Regex(@"(?<=\<a.*\bhref\=\"")[^\""]*", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture);
+
+        /// <summary>
+        /// Find hyperlinks in a page for the the given hostname excluding the already visited link
+        /// </summary>
+        /// <param name="html"></param>
+        /// <param name="host"></param>
+        /// <param name="visited">Collection of already visited and to be excluded links</param>
+        /// <returns></returns>
         private static Queue<Uri> GetHyperLinks(string html, string host, IEnumerable<string> visited) => new Queue<Uri>(hyperlinkPattern.Matches(html).Select(p => p.Value.ToLower()).Where(p => p.Contains(host) && !visited.Contains(p)).Select(p => new Uri(p)));
 
+        /// <summary>
+        /// Synshronous call to fetch html cleaned content from given url.
+        /// </summary>
+        /// <param name="link"></param>
+        /// <returns></returns>
+        /// <seealso cref="GetTextFromUrl(Uri, List{string}, byte)"/>
+        /// <seealso cref="GetTextFromUrlAsync(Uri)"/>
         public string GetTextFromUrl(Uri link) => GetTextFromUrl(link, new List<string>());
 
+        /// <summary>
+        /// Asynshronous multithreaded call to fetch html cleaned content from given url.
+        /// </summary>
+        /// <param name="link"></param>
+        /// <returns></returns>
+        /// <seealso cref="GetTextFromUrlAsync(Uri, ConcurrentDictionary{string, string}, byte)"/>
+        /// <seealso cref="GetTextFromUrl(Uri)"/>
         public async Task<string> GetTextFromUrlAsync(Uri link)
         {
             var visited = new ConcurrentDictionary<string, string>();

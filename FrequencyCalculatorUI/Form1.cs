@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using WordProcessor;
 
-namespace WordFrequencyCalculator
+namespace FrequencyCalculatorUI
 {
     public partial class Form1 : Form
     {
@@ -16,7 +16,7 @@ namespace WordFrequencyCalculator
             backgroundWorker1.RunWorkerCompleted += BackgroundWorker1_RunWorkerCompleted;
         }
         Uri link;
-        private void button1_Click(object sender, EventArgs e) => ButtonClick(1);
+        private void Button1_Click(object sender, EventArgs e) => ButtonClick(1);
 
         private void ButtonClick(object arg)
         {
@@ -57,12 +57,12 @@ namespace WordFrequencyCalculator
             var startTime = DateTime.Now;
             var fc = new FrequencyCalculator();
             var depth = Convert.ToByte(numericUpDown1.Value);
-            var content = new Utility(depth).GetTextFromUrlAsync(link).Result;
+            var content = new Downloader(depth).GetTextFromUrlAsync(link).Result;
             //var content = Utility.GetTextFromUrl(link);
             backgroundWorker1.ReportProgress(50, content);
             IEnumerable<PhraseFrequency> res;
             if (e.Argument.ToString() == "1")
-                res = fc.CalculateWordFrequence(content, 10);
+                res = fc.CalculateWordFrequency(content, 10);
             else
                 res = fc.CalculateWordPairFrequency(content, 10);
             backgroundWorker1.ReportProgress(75, res);
@@ -91,6 +91,6 @@ namespace WordFrequencyCalculator
             listBox1.Enabled = !working;
         }
 
-        private void button2_Click(object sender, EventArgs e) => ButtonClick(2);
+        private void Button2_Click(object sender, EventArgs e) => ButtonClick(2);
     }
 }
