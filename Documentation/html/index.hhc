@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="WordFrequencyCalculator"><param name="Local" value="md__c___users_palas_source_repos__word_frequency_calculator__r_e_a_d_m_e.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Prerequisites"><param name="Local" value="md__c___users_palas_source_repos__word_frequency_calculator__r_e_a_d_m_e.html#autotoc_md1"><param name="ImageNumber" value="11"></OBJECT>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Packages"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Packages"><param name="Local" value="namespaces.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorUI"><param name="Local" value="namespace_frequency_calculator_u_i.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor"><param name="Local" value="namespace_word_processor.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Tests"><param name="Local" value="namespace_word_processor_1_1_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorUI"><param name="Local" value="namespace_frequency_calculator_u_i.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html#a7a1f17124eb3b309d91f9d479dd089c6"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Dispose"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html#a0bc8f2c9feccc307614bbe3c39807568"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor"><param name="Local" value="namespace_word_processor.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Tests"><param name="Local" value="namespace_word_processor_1_1_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="DownloaderTests"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="CleanHtmlTest"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aabee0a8b4bc39e1dfb2bbef48e36722e"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GetHtmlFromUrlAsyncTest"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#a794839ab122f44aaa8bd141aab37af2e"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTextFromUrlTest"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aaaf7070edf081e449a2672d67a2315cf"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorTests"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordFrequenceTest"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a03f4a3187367baeff1b6484ee492d737"><param name="ImageNumber" value="11"></OBJECT>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordPairFrequencyTest"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a941e3a6a770163b877b382df035c23eb"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Downloader"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Downloader"><param name="Local" value="class_word_processor_1_1_downloader.html#ab6246649db128afcb0fdbae5968c9dd7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTextFromUrl"><param name="Local" value="class_word_processor_1_1_downloader.html#a6db0f1222aa8df68f043e57d70838eec"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTextFromUrlAsync"><param name="Local" value="class_word_processor_1_1_downloader.html#a2858e0b3d7347f389bff1112f80eee22"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PresentLevel"><param name="Local" value="class_word_processor_1_1_downloader.html#a410f784f57dde5d840dd91ec82b220d2"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculator"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordFrequency"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a1655b54a8802397f93f40d67195bd809"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordFrequency"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#acffe587ae46a5c8c5da9933b673394f7"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordPairFrequency"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#aa4ed83e9fdb0cae25519db0e85e01459"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="CalculateWordPairFrequency"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a5e6fd395e491ca9ad44e9712f049ba34"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhraseFrequency"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="PhraseFrequency"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ae67a7a075144a856623898c33f22d12b"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Frequency"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#aa761fb7c42f38e97dac67c6c037ed752"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Word"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ac5cecdeca477469087e2f2c01f13a616"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhraseFrequencyComparer"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Equals"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a1625ffae7cef67551d911105beec90ef"><param name="ImageNumber" value="11"></OBJECT>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="GetHashCode"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a62a3b1afad7ace83724a58972162b16b"><param name="ImageNumber" value="11"></OBJECT>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.Downloader"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.Tests.DownloaderTests"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Form"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorUI.Form1"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.FrequencyCalculator"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.Tests.FrequencyCalculatorTests"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="IEqualityComparer"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.PhraseFrequencyComparer"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.PhraseFrequency"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Properties"><param name="Local" value="functions_prop.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Files"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="File List"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorUI"><param name="Local" value="dir_33e6311b4bc3648797a40427d4eede24.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="dir_69a6821a420958525ac6868ad8190195.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Debug"><param name="Local" value="dir_8220d6bcff4ae1b00215748834231e35.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="net5.0-windows"><param name="Local" value="dir_0a22eed38388d0a6b26a54bdaba27266.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value=".NETCoreApp,Version=v5.0.AssemblyAttributes.cs"><param name="Local" value="_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorUI.AssemblyInfo.cs"><param name="Local" value="_frequency_calculator_u_i_8_assembly_info_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1.cs"><param name="Local" value="_form1_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Form1.Designer.cs"><param name="Local" value="_form1_8_designer_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Program.cs"><param name="Local" value="_program_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor"><param name="Local" value="dir_c44cc232aa8b020b8afc6e486bb9cf98.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="dir_5120cde79482e2a87aa988c13901f989.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Debug"><param name="Local" value="dir_d5921f4a7e11255ea4213b345b0c1e3e.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="netstandard2.0"><param name="Local" value="dir_74d9f030876c4992f72f0ae7530b0ee1.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value=".NETStandard,Version=v2.0.AssemblyAttributes.cs"><param name="Local" value="_8_n_e_t_standard_00_version_0av2_80_8_assembly_attributes_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.AssemblyInfo.cs"><param name="Local" value="netstandard2_80_2_word_processor_8_assembly_info_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="netstandard2.1"><param name="Local" value="dir_5840345c41716bf92a17b7233eda8bde.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value=".NETStandard,Version=v2.1.AssemblyAttributes.cs"><param name="Local" value="_8_n_e_t_standard_00_version_0av2_81_8_assembly_attributes_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessor.AssemblyInfo.cs"><param name="Local" value="netstandard2_81_2_word_processor_8_assembly_info_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Downloader.cs"><param name="Local" value="_downloader_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculator.cs"><param name="Local" value="_frequency_calculator_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhraseFrequency.cs"><param name="Local" value="_phrase_frequency_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PhraseFrequencyComparer.cs"><param name="Local" value="_phrase_frequency_comparer_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessorTests"><param name="Local" value="dir_827901b4e2d91a1d056b53995f3c66c4.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="obj"><param name="Local" value="dir_b5e3e51a50ef3dd27c7afee98dee186a.html"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="Debug"><param name="Local" value="dir_08aead82e63e168e1e097596bb3abb69.html"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="netcoreapp3.1"><param name="Local" value="dir_6fb1a53b2fd7483a24428e9e6f97e434.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value=".NETCoreApp,Version=v3.1.AssemblyAttributes.cs"><param name="Local" value="_8_n_e_t_core_app_00_version_0av3_81_8_assembly_attributes_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="WordProcessorTests.AssemblyInfo.cs"><param name="Local" value="_word_processor_tests_8_assembly_info_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        </UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="DownloaderTests.cs"><param name="Local" value="_downloader_tests_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrequencyCalculatorTests.cs"><param name="Local" value="_frequency_calculator_tests_8cs_source.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

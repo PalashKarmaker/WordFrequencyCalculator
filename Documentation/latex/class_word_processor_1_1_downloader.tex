@@ -1,0 +1,150 @@
+\hypertarget{class_word_processor_1_1_downloader}{}\doxysection{Word\+Processor.\+Downloader Class Reference}
+\label{class_word_processor_1_1_downloader}\index{WordProcessor.Downloader@{WordProcessor.Downloader}}
+
+
+Class to download content from given url traversing upto a certain level of depth of the hyperlinks of same domain  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_word_processor_1_1_downloader_ab6246649db128afcb0fdbae5968c9dd7}{Downloader}} (byte depth)
+\begin{DoxyCompactList}\small\item\em Constructor for Downloaded \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_word_processor_1_1_downloader_a6db0f1222aa8df68f043e57d70838eec}{Get\+Text\+From\+Url}} (Uri link, List$<$ string $>$ visited, byte level=0)
+\begin{DoxyCompactList}\small\item\em Synshronous call to fetch html cleaned content from given url. It traverses upto a certain level of depth of the hyperlinks of same domain \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_word_processor_1_1_downloader_a2858e0b3d7347f389bff1112f80eee22}{Get\+Text\+From\+Url\+Async}} (Uri link, Concurrent\+Dictionary$<$ string, string $>$ visited, byte level=0)
+\begin{DoxyCompactList}\small\item\em Asynshronous multithreaded call to fetch html cleaned content from given url. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_word_processor_1_1_downloader_aa6feaf1ed2053841195b2b96cb442cc0}{Clean\+Html}} (string input)
+\begin{DoxyCompactList}\small\item\em Outputs string stripping off html tags and extra spaces \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_word_processor_1_1_downloader_a410f784f57dde5d840dd91ec82b220d2}\label{class_word_processor_1_1_downloader_a410f784f57dde5d840dd91ec82b220d2}} 
+float {\bfseries Present\+Level} =$>$ present\+Level
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to download content from given url traversing upto a certain level of depth of the hyperlinks of same domain 
+
+
+
+Definition at line 17 of file Downloader.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_word_processor_1_1_downloader_ab6246649db128afcb0fdbae5968c9dd7}\label{class_word_processor_1_1_downloader_ab6246649db128afcb0fdbae5968c9dd7}} 
+\index{WordProcessor.Downloader@{WordProcessor.Downloader}!Downloader@{Downloader}}
+\index{Downloader@{Downloader}!WordProcessor.Downloader@{WordProcessor.Downloader}}
+\doxysubsubsection{\texorpdfstring{Downloader()}{Downloader()}}
+{\footnotesize\ttfamily Word\+Processor.\+Downloader.\+Downloader (\begin{DoxyParamCaption}\item[{byte}]{depth }\end{DoxyParamCaption})}
+
+
+
+Constructor for Downloaded 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file Downloader.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_processor_1_1_downloader_aa6feaf1ed2053841195b2b96cb442cc0}\label{class_word_processor_1_1_downloader_aa6feaf1ed2053841195b2b96cb442cc0}} 
+\index{WordProcessor.Downloader@{WordProcessor.Downloader}!CleanHtml@{CleanHtml}}
+\index{CleanHtml@{CleanHtml}!WordProcessor.Downloader@{WordProcessor.Downloader}}
+\doxysubsubsection{\texorpdfstring{CleanHtml()}{CleanHtml()}}
+{\footnotesize\ttfamily static string Word\+Processor.\+Downloader.\+Clean\+Html (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Outputs string stripping off html tags and extra spaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Downloader.\+cs.
+
+\mbox{\Hypertarget{class_word_processor_1_1_downloader_a6db0f1222aa8df68f043e57d70838eec}\label{class_word_processor_1_1_downloader_a6db0f1222aa8df68f043e57d70838eec}} 
+\index{WordProcessor.Downloader@{WordProcessor.Downloader}!GetTextFromUrl@{GetTextFromUrl}}
+\index{GetTextFromUrl@{GetTextFromUrl}!WordProcessor.Downloader@{WordProcessor.Downloader}}
+\doxysubsubsection{\texorpdfstring{GetTextFromUrl()}{GetTextFromUrl()}}
+{\footnotesize\ttfamily string Word\+Processor.\+Downloader.\+Get\+Text\+From\+Url (\begin{DoxyParamCaption}\item[{Uri}]{link,  }\item[{List$<$ string $>$}]{visited,  }\item[{byte}]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Synshronous call to fetch html cleaned content from given url. It traverses upto a certain level of depth of the hyperlinks of same domain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link} & \\
+\hline
+{\em visited} & Keep track already visited links\\
+\hline
+{\em level} & Level of depth of the hyperlinks of same domain to traverse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_downloader_a2858e0b3d7347f389bff1112f80eee22}{Get\+Text\+From\+Url\+Async(\+Uri, Concurrent\+Dictionary$<$string, string$>$, byte)}}, Get\+Text\+From\+Url(\+Uri)
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 52 of file Downloader.\+cs.
+
+\mbox{\Hypertarget{class_word_processor_1_1_downloader_a2858e0b3d7347f389bff1112f80eee22}\label{class_word_processor_1_1_downloader_a2858e0b3d7347f389bff1112f80eee22}} 
+\index{WordProcessor.Downloader@{WordProcessor.Downloader}!GetTextFromUrlAsync@{GetTextFromUrlAsync}}
+\index{GetTextFromUrlAsync@{GetTextFromUrlAsync}!WordProcessor.Downloader@{WordProcessor.Downloader}}
+\doxysubsubsection{\texorpdfstring{GetTextFromUrlAsync()}{GetTextFromUrlAsync()}}
+{\footnotesize\ttfamily async Task Word\+Processor.\+Downloader.\+Get\+Text\+From\+Url\+Async (\begin{DoxyParamCaption}\item[{Uri}]{link,  }\item[{Concurrent\+Dictionary$<$ string, string $>$}]{visited,  }\item[{byte}]{level = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Asynshronous multithreaded call to fetch html cleaned content from given url. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em link} & \\
+\hline
+{\em visited} & Keep track already visited links and corresponding contents\\
+\hline
+{\em level} & Level of depth of the hyperlinks of same domain to traverse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_downloader_a6db0f1222aa8df68f043e57d70838eec}{Get\+Text\+From\+Url(\+Uri, List$<$string$>$, byte)}}, Get\+Text\+From\+Url\+Async(\+Uri)
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 101 of file Downloader.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/palas/source/repos/\+Word\+Frequency\+Calculator/\+Word\+Processor/Downloader.\+cs\end{DoxyCompactItemize}

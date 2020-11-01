@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a03f4a3187367baeff1b6484ee492d737"><param name="Name" value="CalculateWordFrequenceTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a1655b54a8802397f93f40d67195bd809"><param name="Name" value="CalculateWordFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a1655b54a8802397f93f40d67195bd809"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#acffe587ae46a5c8c5da9933b673394f7"><param name="Name" value="CalculateWordFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#acffe587ae46a5c8c5da9933b673394f7"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a5e6fd395e491ca9ad44e9712f049ba34"><param name="Name" value="CalculateWordPairFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a5e6fd395e491ca9ad44e9712f049ba34"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#aa4ed83e9fdb0cae25519db0e85e01459"><param name="Name" value="CalculateWordPairFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#aa4ed83e9fdb0cae25519db0e85e01459"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a941e3a6a770163b877b382df035c23eb"><param name="Name" value="CalculateWordPairFrequencyTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#aa6feaf1ed2053841195b2b96cb442cc0"><param name="Name" value="CleanHtml"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aabee0a8b4bc39e1dfb2bbef48e36722e"><param name="Name" value="CleanHtmlTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html#a0bc8f2c9feccc307614bbe3c39807568"><param name="Name" value="Dispose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#ab6246649db128afcb0fdbae5968c9dd7"><param name="Name" value="Downloader"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a1625ffae7cef67551d911105beec90ef"><param name="Name" value="Equals"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#aa761fb7c42f38e97dac67c6c037ed752"><param name="Name" value="Frequency"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_frequency_calculator_u_i.html"><param name="Name" value="FrequencyCalculatorUI"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html"><param name="Name" value="FrequencyCalculatorUI::Form1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html"><param name="Name" value="FrequencyCalculatorUI::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_frequency_calculator_u_i_1_1_form1.html#a0bc8f2c9feccc307614bbe3c39807568"><param name="Name" value="Dispose"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a62a3b1afad7ace83724a58972162b16b"><param name="Name" value="GetHashCode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#a794839ab122f44aaa8bd141aab37af2e"><param name="Name" value="GetHtmlFromUrlAsyncTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a6db0f1222aa8df68f043e57d70838eec"><param name="Name" value="GetTextFromUrl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a2858e0b3d7347f389bff1112f80eee22"><param name="Name" value="GetTextFromUrlAsync"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aaaf7070edf081e449a2672d67a2315cf"><param name="Name" value="GetTextFromUrlTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ae67a7a075144a856623898c33f22d12b"><param name="Name" value="PhraseFrequency"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a410f784f57dde5d840dd91ec82b220d2"><param name="Name" value="PresentLevel"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ac5cecdeca477469087e2f2c01f13a616"><param name="Name" value="Word"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__c___users_palas_source_repos__word_frequency_calculator__r_e_a_d_m_e.html"><param name="Name" value="WordFrequencyCalculator"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_word_processor.html"><param name="Name" value="WordProcessor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#aa6feaf1ed2053841195b2b96cb442cc0"><param name="Name" value="CleanHtml"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#ab6246649db128afcb0fdbae5968c9dd7"><param name="Name" value="Downloader"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a6db0f1222aa8df68f043e57d70838eec"><param name="Name" value="GetTextFromUrl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a2858e0b3d7347f389bff1112f80eee22"><param name="Name" value="GetTextFromUrlAsync"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html"><param name="Name" value="WordProcessor::Downloader"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_downloader.html#a410f784f57dde5d840dd91ec82b220d2"><param name="Name" value="PresentLevel"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#acffe587ae46a5c8c5da9933b673394f7"><param name="Name" value="CalculateWordFrequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a1655b54a8802397f93f40d67195bd809"><param name="Name" value="CalculateWordFrequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#aa4ed83e9fdb0cae25519db0e85e01459"><param name="Name" value="CalculateWordPairFrequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html"><param name="Name" value="WordProcessor::FrequencyCalculator"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_frequency_calculator.html#a5e6fd395e491ca9ad44e9712f049ba34"><param name="Name" value="CalculateWordPairFrequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="Name" value="WordProcessor::PhraseFrequency"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="Name" value="WordProcessor::PhraseFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#aa761fb7c42f38e97dac67c6c037ed752"><param name="Name" value="Frequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="Name" value="WordProcessor::PhraseFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ae67a7a075144a856623898c33f22d12b"><param name="Name" value="PhraseFrequency"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html"><param name="Name" value="WordProcessor::PhraseFrequency"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency.html#ac5cecdeca477469087e2f2c01f13a616"><param name="Name" value="Word"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html"><param name="Name" value="WordProcessor::PhraseFrequencyComparer"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html"><param name="Name" value="WordProcessor::PhraseFrequencyComparer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a1625ffae7cef67551d911105beec90ef"><param name="Name" value="Equals"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html"><param name="Name" value="WordProcessor::PhraseFrequencyComparer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_phrase_frequency_comparer.html#a62a3b1afad7ace83724a58972162b16b"><param name="Name" value="GetHashCode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_word_processor_1_1_tests.html"><param name="Name" value="WordProcessor::Tests"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="Name" value="WordProcessor::Tests::DownloaderTests"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="Name" value="WordProcessor::Tests::DownloaderTests"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aabee0a8b4bc39e1dfb2bbef48e36722e"><param name="Name" value="CleanHtmlTest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="Name" value="WordProcessor::Tests::DownloaderTests"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#a794839ab122f44aaa8bd141aab37af2e"><param name="Name" value="GetHtmlFromUrlAsyncTest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html"><param name="Name" value="WordProcessor::Tests::DownloaderTests"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_downloader_tests.html#aaaf7070edf081e449a2672d67a2315cf"><param name="Name" value="GetTextFromUrlTest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html"><param name="Name" value="WordProcessor::Tests::FrequencyCalculatorTests"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html"><param name="Name" value="WordProcessor::Tests::FrequencyCalculatorTests"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a03f4a3187367baeff1b6484ee492d737"><param name="Name" value="CalculateWordFrequenceTest"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html"><param name="Name" value="WordProcessor::Tests::FrequencyCalculatorTests"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html#a941e3a6a770163b877b382df035c23eb"><param name="Name" value="CalculateWordPairFrequencyTest"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

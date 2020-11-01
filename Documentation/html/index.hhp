@@ -1,0 +1,86 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=Word Frequency Calculator
+
+[WINDOWS]
+main="Word Frequency Calculator","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_8_n_e_t_core_app_00_version_0av3_81_8_assembly_attributes_8cs_source.html
+_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs_source.html
+_8_n_e_t_standard_00_version_0av2_80_8_assembly_attributes_8cs_source.html
+_8_n_e_t_standard_00_version_0av2_81_8_assembly_attributes_8cs_source.html
+_downloader_8cs_source.html
+_downloader_tests_8cs_source.html
+_form1_8_designer_8cs_source.html
+_form1_8cs_source.html
+_frequency_calculator_8cs_source.html
+_frequency_calculator_tests_8cs_source.html
+_frequency_calculator_u_i_8_assembly_info_8cs_source.html
+_phrase_frequency_8cs_source.html
+_phrase_frequency_comparer_8cs_source.html
+_program_8cs_source.html
+_word_processor_tests_8_assembly_info_8cs_source.html
+annotated.html
+class_frequency_calculator_u_i_1_1_form1-members.html
+class_frequency_calculator_u_i_1_1_form1.html
+class_word_processor_1_1_downloader-members.html
+class_word_processor_1_1_downloader.html
+class_word_processor_1_1_frequency_calculator-members.html
+class_word_processor_1_1_frequency_calculator.html
+class_word_processor_1_1_phrase_frequency-members.html
+class_word_processor_1_1_phrase_frequency.html
+class_word_processor_1_1_phrase_frequency_comparer-members.html
+class_word_processor_1_1_phrase_frequency_comparer.html
+class_word_processor_1_1_tests_1_1_downloader_tests-members.html
+class_word_processor_1_1_tests_1_1_downloader_tests.html
+class_word_processor_1_1_tests_1_1_frequency_calculator_tests-members.html
+class_word_processor_1_1_tests_1_1_frequency_calculator_tests.html
+classes.html
+dir_08aead82e63e168e1e097596bb3abb69.html
+dir_0a22eed38388d0a6b26a54bdaba27266.html
+dir_33e6311b4bc3648797a40427d4eede24.html
+dir_5120cde79482e2a87aa988c13901f989.html
+dir_5840345c41716bf92a17b7233eda8bde.html
+dir_69a6821a420958525ac6868ad8190195.html
+dir_6fb1a53b2fd7483a24428e9e6f97e434.html
+dir_74d9f030876c4992f72f0ae7530b0ee1.html
+dir_8220d6bcff4ae1b00215748834231e35.html
+dir_827901b4e2d91a1d056b53995f3c66c4.html
+dir_b5e3e51a50ef3dd27c7afee98dee186a.html
+dir_c44cc232aa8b020b8afc6e486bb9cf98.html
+dir_d5921f4a7e11255ea4213b345b0c1e3e.html
+files.html
+functions.html
+functions_func.html
+functions_prop.html
+hierarchy.html
+index.html
+md__c___users_palas_source_repos__word_frequency_calculator__r_e_a_d_m_e.html
+namespace_frequency_calculator_u_i.html
+namespace_word_processor.html
+namespace_word_processor_1_1_tests.html
+namespaces.html
+netstandard2_80_2_word_processor_8_assembly_info_8cs_source.html
+netstandard2_81_2_word_processor_8_assembly_info_8cs_source.html
+pages.html
+bc_s.png
+bdwn.png
+class_frequency_calculator_u_i_1_1_form1.png
+class_word_processor_1_1_phrase_frequency_comparer.png
+closed.png
+nav_f.png
+nav_h.png
+open.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png

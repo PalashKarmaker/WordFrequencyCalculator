@@ -1,0 +1,143 @@
+\hypertarget{class_word_processor_1_1_frequency_calculator}{}\doxysection{Word\+Processor.\+Frequency\+Calculator Class Reference}
+\label{class_word_processor_1_1_frequency_calculator}\index{WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}}
+
+
+ 
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}} $>$ \mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_a1655b54a8802397f93f40d67195bd809}{Calculate\+Word\+Frequency}} (string content, int? n=null)
+\begin{DoxyCompactList}\small\item\em Calculate frequency of occurance of a particular word in a given text content \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}} $>$ \mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_acffe587ae46a5c8c5da9933b673394f7}{Calculate\+Word\+Frequency}} (Uri uri, int? n=null)
+\begin{DoxyCompactList}\small\item\em Calculate frequency of occurance of a particular w foordr given url \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}} $>$ \mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_a5e6fd395e491ca9ad44e9712f049ba34}{Calculate\+Word\+Pair\+Frequency}} (Uri uri, int n)
+\begin{DoxyCompactList}\small\item\em Calculate frequency of occurance of a particular word pair in a given url \end{DoxyCompactList}\item 
+I\+Enumerable$<$ \mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}} $>$ \mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_aa4ed83e9fdb0cae25519db0e85e01459}{Calculate\+Word\+Pair\+Frequency}} (string content, int n)
+\begin{DoxyCompactList}\small\item\em Calculate frequency of occurance of a particular word pair in a given text content \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}}, \mbox{\hyperlink{class_word_processor_1_1_downloader}{Downloader}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 13 of file Frequency\+Calculator.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_word_processor_1_1_frequency_calculator_a1655b54a8802397f93f40d67195bd809}\label{class_word_processor_1_1_frequency_calculator_a1655b54a8802397f93f40d67195bd809}} 
+\index{WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}!CalculateWordFrequency@{CalculateWordFrequency}}
+\index{CalculateWordFrequency@{CalculateWordFrequency}!WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateWordFrequency()}{CalculateWordFrequency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}}$>$ Word\+Processor.\+Frequency\+Calculator.\+Calculate\+Word\+Frequency (\begin{DoxyParamCaption}\item[{string}]{content,  }\item[{int?}]{n = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Calculate frequency of occurance of a particular word in a given text content 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+{\em n} & Take only first set of items with freequency in descending order \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Top n items with freequency in descending order
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Frequency\+Calculator.\+cs.
+
+\mbox{\Hypertarget{class_word_processor_1_1_frequency_calculator_acffe587ae46a5c8c5da9933b673394f7}\label{class_word_processor_1_1_frequency_calculator_acffe587ae46a5c8c5da9933b673394f7}} 
+\index{WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}!CalculateWordFrequency@{CalculateWordFrequency}}
+\index{CalculateWordFrequency@{CalculateWordFrequency}!WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateWordFrequency()}{CalculateWordFrequency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}}$>$ Word\+Processor.\+Frequency\+Calculator.\+Calculate\+Word\+Frequency (\begin{DoxyParamCaption}\item[{Uri}]{uri,  }\item[{int?}]{n = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Calculate frequency of occurance of a particular w foordr given url 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & \\
+\hline
+{\em n} & Take only top n items with freequency in descending order\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Top n items with freequency in descending order
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_a1655b54a8802397f93f40d67195bd809}{Calculate\+Word\+Frequency(string, int?)}}
+
+
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_word_processor_1_1_frequency_calculator_aa4ed83e9fdb0cae25519db0e85e01459}\label{class_word_processor_1_1_frequency_calculator_aa4ed83e9fdb0cae25519db0e85e01459}} 
+\index{WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}!CalculateWordPairFrequency@{CalculateWordPairFrequency}}
+\index{CalculateWordPairFrequency@{CalculateWordPairFrequency}!WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateWordPairFrequency()}{CalculateWordPairFrequency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}}$>$ Word\+Processor.\+Frequency\+Calculator.\+Calculate\+Word\+Pair\+Frequency (\begin{DoxyParamCaption}\item[{string}]{content,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Calculate frequency of occurance of a particular word pair in a given text content 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Top n items with freequency in descending order
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_acffe587ae46a5c8c5da9933b673394f7}{Calculate\+Word\+Frequency(\+Uri, int?)}}
+
+
+\end{DoxySeeAlso}
+
+
+Definition at line 66 of file Frequency\+Calculator.\+cs.
+
+\mbox{\Hypertarget{class_word_processor_1_1_frequency_calculator_a5e6fd395e491ca9ad44e9712f049ba34}\label{class_word_processor_1_1_frequency_calculator_a5e6fd395e491ca9ad44e9712f049ba34}} 
+\index{WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}!CalculateWordPairFrequency@{CalculateWordPairFrequency}}
+\index{CalculateWordPairFrequency@{CalculateWordPairFrequency}!WordProcessor.FrequencyCalculator@{WordProcessor.FrequencyCalculator}}
+\doxysubsubsection{\texorpdfstring{CalculateWordPairFrequency()}{CalculateWordPairFrequency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+Enumerable$<$\mbox{\hyperlink{class_word_processor_1_1_phrase_frequency}{Phrase\+Frequency}}$>$ Word\+Processor.\+Frequency\+Calculator.\+Calculate\+Word\+Pair\+Frequency (\begin{DoxyParamCaption}\item[{Uri}]{uri,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Calculate frequency of occurance of a particular word pair in a given url 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Set of items with freequency in descending order
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_word_processor_1_1_frequency_calculator_aa4ed83e9fdb0cae25519db0e85e01459}{Calculate\+Word\+Pair\+Frequency(string, int)}}
+
+
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/palas/source/repos/\+Word\+Frequency\+Calculator/\+Word\+Processor/Frequency\+Calculator.\+cs\end{DoxyCompactItemize}
