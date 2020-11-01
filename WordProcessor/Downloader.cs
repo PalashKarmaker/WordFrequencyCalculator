@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace WordProcessor
@@ -85,6 +86,9 @@ namespace WordProcessor
             return htmlBuilder.ToString();
         }
 
+        public float PresentLevel => presentLevel;
+        private float presentLevel = 0;
+
         /// <summary>
         /// Asynshronous multithreaded call to fetch html cleaned content from given url.
         /// </summary>
@@ -120,18 +124,24 @@ namespace WordProcessor
             if (level == maxDepth)
                 return;
             level++;
+            var lastProgress = 1.0f * level / maxDepth;
             var hyperLinks = GetHyperLinks(html, link.Host, visited.Keys);
             if (!hyperLinks.Any())
-                return;
-            var downloaadTasks = new List<Task>();
-            do
             {
-                var hl = hyperLinks.Dequeue();
-                downloaadTasks.Add(GetTextFromUrlAsync(hl, visited, level));
-            } while (hyperLinks.Any());
-            if (downloaadTasks.Count > 0)
-                Task.WaitAll(downloaadTasks.ToArray());
-            return;
+                if (presentLevel < lastProgress)
+                    Interlocked.Exchange(ref presentLevel, lastProgress);
+                return;
+            }
+            var increment = 1.0f / (maxDepth * hyperLinks.Count);
+            var opts = new ParallelOptions { MaxDegreeOfParallelism = 3 };
+            Parallel.ForEach(hyperLinks, opts, hl =>
+            {
+                var t = GetTextFromUrlAsync(hl, visited, level);
+                lastProgress += increment;
+                if (presentLevel < lastProgress)
+                    Interlocked.Exchange(ref presentLevel, lastProgress);
+                t.Wait();
+            });
         }
 
         /// <summary>
@@ -166,6 +176,7 @@ namespace WordProcessor
         /// <seealso cref="GetTextFromUrl(Uri)"/>
         public async Task<string> GetTextFromUrlAsync(Uri link)
         {
+            presentLevel = 0;
             var visited = new ConcurrentDictionary<string, string>();
             await GetTextFromUrlAsync(link, visited);
             return String.Join(" ", visited.Select(p => p.Value));
