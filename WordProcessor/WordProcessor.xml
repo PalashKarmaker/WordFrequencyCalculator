@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WordProcessor</name>
+    </assembly>
+    <members>
+        <member name="T:WordProcessor.Downloader">
+            <summary>
+            Class to download content from given url traversing upto a certain level of depth of the hyperlinks of same domain
+            </summary>
+        </member>
+        <member name="M:WordProcessor.Downloader.#ctor(System.Byte)">
+            <summary>
+            Constructor for Downloaded
+            </summary>
+            <param name="depth"></param>
+        </member>
+        <member name="M:WordProcessor.Downloader.CleanHtml(System.String)">
+            <summary>
+            Outputs string stripping off html tags and extra spaces
+            </summary>
+            <param name="input"></param>
+            <returns>string</returns>
+        </member>
+        <member name="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri,System.Collections.Generic.List{System.String},System.Byte)">
+            <summary>
+            Synshronous call to fetch html cleaned content from given url.
+            It traverses upto a certain level of depth of the hyperlinks of same domain
+            </summary>
+            <param name="link"></param>
+            <param name="visited">Keep track already visited links</param>
+            <param name="level">Level of depth of the hyperlinks of same domain to traverse</param>
+            <returns></returns>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri,System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String},System.Byte)"/>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri)"/>
+        </member>
+        <member name="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri,System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String},System.Byte)">
+            <summary>
+            Asynshronous multithreaded call to fetch html cleaned content from given url.
+            </summary>
+            <param name="link"></param>
+            <param name="visited">Keep track already visited links and corresponding contents</param>
+            <param name="level">Level of depth of the hyperlinks of same domain to traverse</param>
+            <returns></returns>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri,System.Collections.Generic.List{System.String},System.Byte)"/>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri)"/>
+        </member>
+        <member name="F:WordProcessor.Downloader.hyperlinkPattern">
+            <summary>
+            Regex to find hyperlink inside html content
+            </summary>
+        </member>
+        <member name="M:WordProcessor.Downloader.GetHyperLinks(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Find hyperlinks in a page for the the given hostname excluding the already visited link
+            </summary>
+            <param name="html"></param>
+            <param name="host"></param>
+            <param name="visited">Collection of already visited and to be excluded links</param>
+            <returns></returns>
+        </member>
+        <member name="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri)">
+            <summary>
+            Synshronous call to fetch html cleaned content from given url.
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri,System.Collections.Generic.List{System.String},System.Byte)"/>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri)"/>
+        </member>
+        <member name="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri)">
+            <summary>
+            Asynshronous multithreaded call to fetch html cleaned content from given url.
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrlAsync(System.Uri,System.Collections.Concurrent.ConcurrentDictionary{System.String,System.String},System.Byte)"/>
+            <seealso cref="M:WordProcessor.Downloader.GetTextFromUrl(System.Uri)"/>
+        </member>
+        <member name="T:WordProcessor.FrequencyCalculator">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:WordProcessor.PhraseFrequency"/>
+            <seealso cref="T:WordProcessor.Downloader"/>
+        </member>
+        <member name="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Calculate frequency of occurance of a particular word in a given text content
+            </summary>
+            <param name="content"></param>
+            <param name="n">Take only first set of items with freequency in descending order </param>
+            <returns>Top n items with freequency in descending order</returns>
+        </member>
+        <member name="M:WordProcessor.FrequencyCalculator.CalculateFrequency(System.String,System.Text.RegularExpressions.Regex,System.Nullable{System.Int32})">
+            <summary>
+            Calculate frequency of occurance of a given pattern in a given text content
+            </summary>
+            <param name="content"></param>
+            <param name="wordPattern"></param>
+            <param name="n">Take only top n items with freequency in descending order</param>
+            <returns>Top n items with freequency in descending order</returns>
+            <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})"/>
+        </member>
+        <member name="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})">
+            <summary>
+            Calculate frequency of occurance of a particular w foordr given url
+            </summary>
+            <param name="uri"></param>
+            <param name="n">Take only top n items with freequency in descending order</param>
+            <returns>Top n items with freequency in descending order</returns>
+            <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.String,System.Nullable{System.Int32})"/>
+        </member>
+        <member name="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.Uri,System.Int32)">
+            <summary>
+            Calculate frequency of occurance of a particular word pair in a given url
+            </summary>
+            <param name="uri"></param>
+            <param name="n"></param>
+            <returns>Set of items with freequency in descending order</returns>
+            <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.String,System.Int32)"/>
+        </member>
+        <member name="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.String,System.Int32)">
+            <summary>
+            Calculate frequency of occurance of a particular word pair in a given text content
+            </summary>
+            <param name="content"></param>
+            <param name="n"></param>
+            <returns>Top n items with freequency in descending order</returns>
+            <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})"/>
+        </member>
+        <member name="T:WordProcessor.PhraseFrequency">
+            <summary>
+            Model class to facilitate the calculation of frequency of occurance of a particular phrase in a given text content
+            </summary>
+            <seealso cref="T:WordProcessor.FrequencyCalculator"/>
+        </member>
+        <member name="P:WordProcessor.PhraseFrequency.Frequency">
+            <summary>
+            Frequency of occurance of a particular phrase in a given text content
+            </summary>
+        </member>
+        <member name="P:WordProcessor.PhraseFrequency.Word">
+            <summary>
+            Phrase in a given text content
+            </summary>
+        </member>
+        <member name="M:WordProcessor.PhraseFrequency.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="frequency"></param>
+            <param name="word"></param>
+        </member>
+    </members>
+</doc>
