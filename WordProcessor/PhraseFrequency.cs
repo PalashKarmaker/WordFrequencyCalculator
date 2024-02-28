@@ -1,13 +1,13 @@
 ﻿namespace WordProcessor
 {
     /// <summary>
-    /// Model class to facilitate the calculation of frequency of occurance of a particular phrase in a given text content
+    /// Model class to facilitate the calculation of frequency of occurrence of a particular phrase in a given text content
     /// </summary>
     /// <seealso cref="FrequencyCalculator"/>
     public class PhraseFrequency
     {
         /// <summary>
-        /// Frequency of occurance of a particular phrase in a given text content
+        /// Frequency of occurrence of a particular phrase in a given text content
         /// </summary>
         public int Frequency { get; }
         /// <summary>

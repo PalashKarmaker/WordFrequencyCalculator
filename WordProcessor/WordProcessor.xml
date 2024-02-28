@@ -86,58 +86,58 @@
         </member>
         <member name="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.String,System.Nullable{System.Int32})">
             <summary>
-            Calculate frequency of occurance of a particular word in a given text content
+            Calculate frequency of occurrence of a particular word in a given text content
             </summary>
             <param name="content"></param>
-            <param name="n">Take only first set of items with freequency in descending order </param>
-            <returns>Top n items with freequency in descending order</returns>
+            <param name="n">Take only first set of items with frequency in descending order </param>
+            <returns>Top n items with frequency in descending order</returns>
         </member>
         <member name="M:WordProcessor.FrequencyCalculator.CalculateFrequency(System.String,System.Text.RegularExpressions.Regex,System.Nullable{System.Int32})">
             <summary>
-            Calculate frequency of occurance of a given pattern in a given text content
+            Calculate frequency of occurrence of a given pattern in a given text content
             </summary>
             <param name="content"></param>
             <param name="wordPattern"></param>
-            <param name="n">Take only top n items with freequency in descending order</param>
-            <returns>Top n items with freequency in descending order</returns>
+            <param name="n">Take only top n items with frequency in descending order</param>
+            <returns>Top n items with frequency in descending order</returns>
             <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})"/>
         </member>
         <member name="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})">
             <summary>
-            Calculate frequency of occurance of a particular w foordr given url
+            Calculate frequency of occurrence of a particular w foordr given url
             </summary>
             <param name="uri"></param>
-            <param name="n">Take only top n items with freequency in descending order</param>
-            <returns>Top n items with freequency in descending order</returns>
+            <param name="n">Take only top n items with frequency in descending order</param>
+            <returns>Top n items with frequency in descending order</returns>
             <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.String,System.Nullable{System.Int32})"/>
         </member>
         <member name="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.Uri,System.Int32)">
             <summary>
-            Calculate frequency of occurance of a particular word pair in a given url
+            Calculate frequency of occurrence of a particular word pair in a given url
             </summary>
             <param name="uri"></param>
             <param name="n"></param>
-            <returns>Set of items with freequency in descending order</returns>
+            <returns>Set of items with frequency in descending order</returns>
             <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.String,System.Int32)"/>
         </member>
         <member name="M:WordProcessor.FrequencyCalculator.CalculateWordPairFrequency(System.String,System.Int32)">
             <summary>
-            Calculate frequency of occurance of a particular word pair in a given text content
+            Calculate frequency of occurrence of a particular word pair in a given text content
             </summary>
             <param name="content"></param>
             <param name="n"></param>
-            <returns>Top n items with freequency in descending order</returns>
+            <returns>Top n items with frequency in descending order</returns>
             <seealso cref="M:WordProcessor.FrequencyCalculator.CalculateWordFrequency(System.Uri,System.Nullable{System.Int32})"/>
         </member>
         <member name="T:WordProcessor.PhraseFrequency">
             <summary>
-            Model class to facilitate the calculation of frequency of occurance of a particular phrase in a given text content
+            Model class to facilitate the calculation of frequency of occurrence of a particular phrase in a given text content
             </summary>
             <seealso cref="T:WordProcessor.FrequencyCalculator"/>
         </member>
         <member name="P:WordProcessor.PhraseFrequency.Frequency">
             <summary>
-            Frequency of occurance of a particular phrase in a given text content
+            Frequency of occurrence of a particular phrase in a given text content
             </summary>
         </member>
         <member name="P:WordProcessor.PhraseFrequency.Word">

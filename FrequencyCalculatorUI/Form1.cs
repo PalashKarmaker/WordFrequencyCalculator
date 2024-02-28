@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,7 +33,7 @@ namespace FrequencyCalculatorUI
             }
             catch
             {
-                MessageBox.Show("Invalid url", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                _ = MessageBox.Show("Invalid url", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 backgroundWorker1.CancelAsync();
             }
         }
@@ -56,8 +57,7 @@ namespace FrequencyCalculatorUI
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            var startTime = DateTime.Now;
-            var fc = new FrequencyCalculator();
+            var ticker = Stopwatch.StartNew();
             var depth = Convert.ToByte(numericUpDown1.Value);
             var downloader = new Downloader(depth);
             var t = downloader.GetTextFromUrlAsync(link);
@@ -70,15 +70,14 @@ namespace FrequencyCalculatorUI
                 Thread.Sleep(1000);
             }
             var content = t.Result;
-            //var content = new Downloader(depth).GetTextFromUrl(link);
             backgroundWorker1.ReportProgress(90, content);
             IEnumerable<PhraseFrequency> res;
             if (e.Argument.ToString() == "1")
-                res = fc.CalculateWordFrequency(content, 10);
+                res = FrequencyCalculator.CalculateWordFrequency(content, 10);
             else
-                res = fc.CalculateWordPairFrequency(content, 10);
+                res = FrequencyCalculator.CalculateWordPairFrequency(content, 10);
             backgroundWorker1.ReportProgress(95, res);
-            backgroundWorker1.ReportProgress(100, DateTime.Now.Subtract(startTime).TotalSeconds);
+            backgroundWorker1.ReportProgress(100, ticker.Elapsed.TotalSeconds);
         }
 
         private void BindList(IEnumerable<PhraseFrequency> res)
